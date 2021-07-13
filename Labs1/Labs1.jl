@@ -87,9 +87,11 @@ end
 
 # ╔═╡ a34aeeea-00cf-42de-a8fc-d7270086a433
 begin
+	#Definição dos limites de aceitação para α = 95%
+	
 	limy = [2std(d1), 2*std(d1)]
 	limx = [0, 50]
-	Print("Definição dos limites de aceitação para 95% de grau de confiabilidade:")
+	limx, limy
 end
 
 # ╔═╡ 60a6e0d1-d222-44e7-9200-99742285adeb
@@ -353,11 +355,11 @@ begin
 	end
 	
 	if size(outliers,1) == 0
-		Print(size(outliers,1)," elemento foi removido!")
+		Print(size(outliers,1)," ponto foi removido!")
 	elseif size(outliers,1) == 1
-		Print(size(outliers,1)," elemento foi removido!")
+		Print(size(outliers,1)," ponto foi removido!")
 	else
-		Print(size(outliers,1)," elementos foram removidos!")
+		Print(size(outliers,1)," pontos foram removidos!")
 	end
 end
 
@@ -1823,7 +1825,7 @@ version = "0.9.1+5"
 # ╟─4225646f-c459-454e-b238-bd369d20ef9d
 # ╟─6789cfda-abe9-471f-86e2-209f3ccd7898
 # ╟─295a89c9-24e0-4be8-95b1-8bf60fa20c23
-# ╟─a34aeeea-00cf-42de-a8fc-d7270086a433
+# ╠═a34aeeea-00cf-42de-a8fc-d7270086a433
 # ╟─abba40bf-a742-4033-8ba5-9c10af910e32
 # ╟─0a6f1d35-5be7-4192-8ca9-2dbf476bb5af
 # ╟─8e400648-232d-405c-a9dd-e9bc6380802b
